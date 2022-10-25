@@ -29,14 +29,16 @@ jobs:
 
     - name: Memote run
       run: |
-        memote report snapshot models/azotobacter_vinelandii_dj/iDT1278.xml  --filename="gh-pages-repo/release_report.html"
+        memote report snapshot models/azotobacter_vinelandii_dj/iDT1278.xml  --filename="gh-pages-repo/iDT1278_release_report.html"
+        memote report snapshot models/rhodosporidium_toruloides_ifo_08804/Rt_IFO0880.xml  --filename="gh-pages-repo/Rt_IFO0880_release_report.html"
+        memote report snapshot models/synechococcus_elongatus_pcc_7942/iJB785.xml  --filename="gh-pages-repo/iJB785_release_report.html"
 
     - name: Auto-commit results
       uses: stefanzweifel/git-auto-commit-action@v4.4.0
       with:
         commit_user_name: memote-bot
         commit_message: "chore: update memote release report"
-        file_pattern: release_report.html
+        file_pattern: '*release_report.html'
         branch: gh-pages
         repository: gh-pages-repo
       env:
