@@ -34,19 +34,18 @@ jobs:
     - name: Update gh-pages
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        run: |
-          # Generate the history report on the deployment branch.
-          output="index.html"
-          git checkout "${deployment}"
-          echo "Generating updated history report '${output}'."
-          memote report history models/azotobacter_vinelandii_dj/iDT1278.xml --filename="${output}"
-  
-          # Add, commit and push the files.
-          git add "${output}"
-          git commit -m "Github actions report # ${GITHUB_SHA}"
-          git push --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${deployment}" > /dev/null
-  
-          echo "Your new report will be visible at https://concerto.github.io in a moment."
+      run: |
+        # Generate the history report on the deployment branch.
+        output="index.html"
+        git checkout "${deployment}"
+        echo "Generating updated history report '${output}'."
+        memote report history models/azotobacter_vinelandii_dj/iDT1278.xml --filename="${output}"
+
+        # Add, commit and push the files.
+        git add "${output}"
+        git commit -m "Github actions report # ${GITHUB_SHA}"
+        git push --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${deployment}" > /dev/null
+
+        echo "Your new report will be visible at https://concerto.github.io in a moment."
