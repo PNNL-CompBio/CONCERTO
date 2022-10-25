@@ -29,7 +29,7 @@ jobs:
 
     - name: Memote run
       run: |
-        memote report snapshot models/azotobacter_vinelandii_dj/iDT1278.xml --solver-timeout 30 --filename="gh-pages-repo/release_report.html"
+        memote report snapshot models/azotobacter_vinelandii_dj/iDT1278.xml  --filename="gh-pages-repo/release_report.html"
 
     - name: Auto-commit results
       uses: stefanzweifel/git-auto-commit-action@v4.4.0
