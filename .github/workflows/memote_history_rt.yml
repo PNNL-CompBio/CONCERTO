@@ -1,4 +1,4 @@
-name: memote history
+name: RT model history
 
 on: push
 
@@ -38,14 +38,14 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/rhodosporidium_toruloides_ifo_08804/iJB785.xml 
+        memote run models/rhodosporidium_toruloides_ifo_08804/Rt_IFO0880.xml 
         
 
     - name: Compute Memote history on push
       run: |
         # Generate the history report on the deployment branch
         memote report history \
-        --model models/rhodosporidium_toruloides_ifo_08804/iJB785.xml \
+        --model models/rhodosporidium_toruloides_ifo_08804/Rt_IFO0880.xml \
         --filename="${{ env.other-repo }}/${{ env.history }}"
 
     - name: Auto-commit results
