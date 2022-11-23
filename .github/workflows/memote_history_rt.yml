@@ -1,7 +1,8 @@
 name: RT model history
 
-on: push
-
+on:
+  push:
+    branches: [ "update_rt_model" ]
 jobs:
   memote-history:
     runs-on: ubuntu-latest

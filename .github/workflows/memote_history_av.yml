@@ -1,6 +1,8 @@
 name: AV model history
 
-on: push
+on:
+  push:
+    branches: [ "update_azovine_model" ]
 
 jobs:
   memote-history:
@@ -38,14 +40,14 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/azotobacter_vinelandii_dj/iDT1278.xml 
+        memote run models/azotobacter_vinelandii_dj/azo_vine.xml 
         
 
     - name: Compute Memote history on push
       run: |
         # Generate the history report on the deployment branch
         memote report history \
-        --model models/azotobacter_vinelandii_dj/iDT1278.xml \
+        --model models/azotobacter_vinelandii_dj/azo_vine.xml \
         --filename="${{ env.other-repo }}/${{ env.history }}"
 
     - name: Auto-commit results
