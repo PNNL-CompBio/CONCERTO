@@ -1,6 +1,8 @@
 name: SE model history
 
-on: push
+on:
+  push:
+    branches: [ "update_se_model" ]
 
 jobs:
   memote-history:
