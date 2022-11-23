@@ -1,0 +1,60 @@
+name: memote history
+
+on: push
+
+jobs:
+  memote-history:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python 3
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.7'
+
+    - name: Install memote
+      run: pip install memote cobra
+
+    - name: Setup variables
+      id: setup
+      run: |
+        echo "history=av_history_report.html" >> $GITHUB_ENV
+        echo "deployment=gh-pages" >> $GITHUB_ENV
+        echo "other-repo=gh-pages-repo" >> $GITHUB_ENV
+        echo "MEMOTE_LOCATION=sqlite:///results.db" >> $GITHUB_ENV
+
+    - name: Checkout repo for gh-pages branch
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ github.repository }}
+        ref: ${{ env.deployment }}
+        path: ${{ env.other-repo }}
+
+    - name: Memote short run
+      run: |
+        git config --global user.name "memote-bot"
+        memote run models/azotobacter_vinelandii_dj/iDT1278.xml 
+        
+
+    - name: Compute Memote history on push
+      run: |
+        # Generate the history report on the deployment branch
+        memote report history \
+        --model models/azotobacter_vinelandii_dj/iDT1278.xml \
+        --filename="${{ env.other-repo }}/${{ env.history }}"
+
+    - name: Auto-commit results
+      uses: stefanzweifel/git-auto-commit-action@v4.4.0
+      with:
+        commit_user_name: memote-bot
+        commit_message: "chore: update memote history report"
+        file_pattern: ${{ env.history }}
+        branch: ${{ env.deployment }}
+        repository: ${{ env.other-repo }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
