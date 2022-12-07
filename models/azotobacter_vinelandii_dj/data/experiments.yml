@@ -1,10 +1,15 @@
 version: "0.1"
-#medium:
-#  path: "media/"
+medium:
+  path: "media/"
+  definitions:
+    glucose:
+        filename: "glucose.csv"
+        label: "Glucose"
 essentiality:
   path: "essentiality/"
   experiments:
     knockouts:
+      medium: glucose
       filename: "knockouts.csv"
       label: "knock-out library"
 growth:
