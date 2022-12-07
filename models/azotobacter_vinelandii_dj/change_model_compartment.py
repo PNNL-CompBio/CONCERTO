@@ -11,7 +11,7 @@ from memote.suite.cli.reports import diff
 import cobra
 import os
 import logging
-from models.helpers.id_mappers import update_ids
+from models.helpers.id_mappers import update_ids, add_annotations
 
 log = logging.getLogger()
 
@@ -44,7 +44,7 @@ def update_1():
 def update_2():
     log.info('Adding annotations to metabolites')
 
-    update_ids(model)
+    add_annotations(model)
 
 
 def update_model():
@@ -56,7 +56,7 @@ def update_model():
 
 if __name__ == '__main__':
     update_model()
-    model_paths = [s_model_path, output_model_path]
+    model_paths = [s_model_path,  'azo_vine2.xml', output_model_path]
     diff(
         [
             *model_paths,
