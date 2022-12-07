@@ -1,7 +1,12 @@
 version: "0.1"
-medium:
-  path: "media/"
+#medium:
+#  path: "media/"
 essentiality:
   path: "essentiality/"
+  experiments:
+    knockouts:
+      filename: "knockouts.csv"
+      label: "knock-out library"
 growth:
   path: "growth/"
+minimal_growth_rate: 0.05
