@@ -5,6 +5,15 @@ medium:
     glucose:
         filename: "glucose.csv"
         label: "Glucose"
+    m9_minimal:
+      filename: "m9_minimal.csv"
+      label: "Minimal"
+    no_carbon:
+      filename: "min_media_no_carbon.csv"
+      label: "AV Minimal"
+    no_nitrogen:
+      filename: "min_media_no_nitrogen.csv"
+      label: "AV minimal, no nitrogren"
 essentiality:
   path: "essentiality/"
   experiments:
@@ -14,4 +23,13 @@ essentiality:
       label: "knock-out library"
 growth:
   path: "growth/"
+  experiments:
+    biolog_pm1:
+      medium:  no_carbon
+      filename: 'pm1_pm2_biolog.csv'
+      label: "Biolog data"
+    biolog_pm3:
+      medium:     no_nitrogen
+      filename: 'pm3_biolog.csv'
+      label: "Biolog data"
 minimal_growth_rate: 0.05

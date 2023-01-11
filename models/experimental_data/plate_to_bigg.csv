@@ -1,0 +1,159 @@
+plate,ex_rxn,compound_name,exchange
+PM1-A10,EX_tre(e),D-Trehalose,EX_tre_e
+PM1-A11,EX_man(e),D-Mannose,EX_man_e
+PM1-A12,EX_galt(e),Dulcitol,EX_galt_e
+PM1-A2,EX_arab_L(e),L-Arabinose,EX_arab__L_e
+PM1-A3,EX_acgam(e),N-Acetyl-DGlucosamine,EX_acgam_e
+PM1-A4,EX_glcr(e),D-Saccharic Acid,EX_glcr_e
+PM1-A5,EX_succ(e),Succinic Acid,EX_succ_e
+PM1-A6,EX_gal(e),D-Galactose,EX_gal_e
+PM1-A7,EX_asp_L(e),L-Aspartic Acid,EX_asp__L_e
+PM1-A8,EX_pro_L(e),L-Proline,EX_pro__L_e
+PM1-A9,EX_ala_D(e),D-Alanine,EX_ala__D_e
+PM1-B1,EX_ser_D(e),D-Serine,EX_ser__D_e
+PM1-B10,EX_for(e),Formic Acid,EX_for_e
+PM1-B11,EX_mnl(e),D-Mannitol,EX_mnl_e
+PM1-B12,EX_glu_L(e),L-Glutamic Acid,EX_glu__L_e
+PM1-B2,EX_sbt_D(e),D-Sorbitol,EX_sbt__D_e
+PM1-B3,EX_glyc(e),Glycerol,EX_glyc_e
+PM1-B4,EX_fuc_L(e),L-Fucose,EX_fuc__L_e
+PM1-B5,EX_glcur(e),D-GlucuronicAcid,EX_glcur_e
+PM1-B6,EX_glcn(e),D-Gluconic Acid,EX_glcn_e
+PM1-B7,EX_glyc3p(e),"D,L-α-Glycerol-Phosphate",EX_glyc3p_e
+PM1-B8,EX_xyl_D(e),D-Xylose,EX_xyl__D_e
+PM1-B9,EX_lac_L(e),L-Lactic Acid,EX_lac__L_e
+PM1-C1,EX_g6p(e),Glucose-6-Phosphate,EX_g6p_e
+PM1-C10,EX_malt(e),Maltose,EX_malt_e
+PM1-C11,EX_melib(e),D-Melibiose,EX_melib_e
+PM1-C12,EX_thymd(e),Thymidine,EX_thymd_e
+PM1-C2,EX_galctn_D(e),D-GalactonicAcid-γ-Lactone,EX_galctn__D_e
+PM1-C4,EX_rib_D(e),D-Ribose,EX_rib__D_e
+PM1-C6,EX_rmn(e),L-Rhamnose,EX_rmn_e
+PM1-C7,EX_fru(e),D-Fructose,EX_fru_e
+PM1-C8,EX_ac(e),Acetic Acid,EX__ac_e
+PM1-C9,EX_glc(e),α-D-Glucose,EX_glc_e
+PM1-D1,EX_asn_L(e),L-Asparagine,EX_asn__L_e
+PM1-D11,EX_sucr(e),Sucrose,EX_sucr_e
+PM1-D12,EX_uri(e),Uridine,EX_uri_e
+PM1-D4,EX_12ppd_S(e),"1,2-Propanediol",EX_12ppd__S_e
+PM1-D6,EX_akg(e),α-Keto-GlutaricAcid,EX_akg_e
+PM1-D9,EX_lcts(e),α-D-Lactose,EX_lcts_e
+PM1-E1,EX_gln_L(e),L-Glutamine,EX_gln__L_e
+PM1-E10,EX_malttr(e),Maltotriose,EX_malttr_e
+PM1-E11,EX_dad_2(e),2-DeoxyAdenosine,EX_dad__2_e
+PM1-E12,EX_adn(e),Adenosine,EX_adn_e
+PM1-E3,EX_g1p(e),Glucose-1-Phosphate,EX_g1p_e
+PM1-E4,EX_f6p(e),Fructose-6-Phosphate,EX_f6p_e
+PM1-F12,EX_ins(e),Inosine,EX_ins_e
+PM1-F2,EX_cit(e),Citric Acid,EX_cit_e
+PM1-F3,EX_inost(e),M-Inositol,EX_inost_e
+PM1-F5,EX_fum(e),Fumaric Acid,EX_fum_e
+PM1-F7,EX_ppa(e),Propionic Acid,EX_ppa_e
+PM1-F8,EX_galct_D(e),Mucic Acid,EX_galct__D_e
+PM1-F9,EX_glyclt(e),Glycolic Acid,EX_glyclt_e
+PM1-G11,EX_mal_D(e),D-Malic Acid,EX_mal__D_e
+PM1-G12,EX_mal_L(e),L-Malic Acid,EX_mal__L_e
+PM1-G3,EX_ser_L(e),L-Serine,EX_ser__L_e
+PM1-G4,EX_thr_L(e),L-Threonine,EX_thr__L_e
+PM1-G5,EX_ala_L(e),L-Alanine,EX_ala__L_e
+PM1-G7,EX_acac(e),Acetoacetic Acid,EX_acac_e
+PM1-G8,EX_acmana(e),N-Acetyl-β-DMannosamine,EX_acmana_e
+PM1-H10,EX_galur(e),D-GalacturonicAcid,EX_galur_e
+PM1-H11,EX_peamn(e),Phenylethylamine,EX_peamn_e
+PM1-H12,EX_etha(e),2-Aminoethanol,EX_etha_e
+PM1-H4,EX_tym(e),Tyramine,EX_tym_e
+PM1-H6,EX_lyx_L(e),L-Lyxose,EX_lyx__L_e
+PM1-H8,EX_pyr(e),Pyruvic Acid,EX_pyr_e
+PM1-H9,EX_galctn_L(e),L-GalactonicAcid-γ-Lactone,EX_galctn__L_e
+PM2-B2,EX_acnam(e),N-Acetyl-Neuraminic Acid,EX_acnam_e
+PM2-B3,EX_all_D(e),β-D-Allose,EX_all__D_e
+PM2-D10,EX_4abut(e),γ-Amino ButyricAcid,EX_4abut_e
+PM2-D12,EX_but(e),Butyric Acid,EX_but_e
+PM2-E1,EX_dca(e),Capric Acid,EX_dca_e
+PM2-E12,EX_5dglcn(e),5-Keto-DGluconicAcid,EX_5dglcn_e
+PM2-E2,EX_hxa(e),Caproic Acid,EX_hxa_e
+PM2-F12,EX_tartr_L(e),L-Tartaric Acid,EX_tartr__L_e
+PM2-G10,EX_leu_L(e),L-Leucine,EX_leu__L_e
+PM2-G11,EX_lys_L(e),L-Lysine,EX_lys__L_e
+PM2-G12,EX_met_L(e),L-Methionine,EX_met__L_e
+PM2-G4,EX_arg_L(e),L-Arginine,EX_arg__L_e
+PM2-G5,EX_gly(e),Glycine,EX_gly_e
+PM2-G6,EX_his_L(e),L-Histidine,EX_his__L_e
+PM2-G7,EX_hom_L(e),L-Homoserine,EX_hom__L_e
+PM2-G9,EX_ile_L(e),L-Isoleucine,EX_ile__L_e
+PM2-H1,EX_orn(e),L-Ornithine,EX_orn_e
+PM2-H2,EX_phe_L(e),L-Phenylalanine,EX_phe__L_e
+PM2-H4,EX_val_L(e),L-Valine,EX_val__L_e
+PM2-H8,EX_ptrc(e),Putrescine,EX_ptrc_e
+PM2-H9,EX_dha(e),DihydroxyAcetone,EX_dha_e
+PM3-A10,EX_asp_L(e),L-AsparticAcid,EX_asp__L_e
+PM3-A11,EX_cys_L(e),L-Cysteine,EX_cys__L_e
+PM3-A12,EX_glu_L(e),L-GlutamicAcid,EX_glu__L_e
+PM3-A2,EX_nh4(e),Ammonia,EX_nh4_e
+PM3-A3,EX_no2(e),Nitrite,EX_no2_e
+PM3-A4,EX_no3(e),Nitrate,EX_no3_e
+PM3-A5,EX_urea(e),Urea,EX_urea_e
+PM3-A7,EX_ala_L(e),L-Alanine,EX_ala__L_e
+PM3-A8,EX_arg_L(e),L-Arginine,EX_arg__L_e
+PM3-A9,EX_asn_L(e),L-Asparagine,EX_asn__L_e
+PM3-B1,EX_gln_L(e),L-Glutamine,EX_gln__L_e
+PM3-B10,EX_ser_L(e),L-Serine,EX_ser__L_e
+PM3-B11,EX_thr_L(e),L-Threonine,EX_thr__L_e
+PM3-B12,EX_trp_L(e),L-Tryptophan,EX_trp__L_e
+PM3-B2,EX_gly(e),Glycine,EX_gly_e
+PM3-B3,EX_his_L(e),L-Histidine,EX_his__L_e
+PM3-B4,EX_ile_L(e),L-Isoleucine,EX_ile__L_e
+PM3-B5,EX_leu_L(e),L-Leucine,EX_leu__L_e
+PM3-B6,EX_lys_L(e),L-Lysine,EX_lys__L_e
+PM3-B7,EX_met_L(e),L-Methionine,EX_met__L_e
+PM3-B8,EX_phe_L(e),L-Phenylalanine,EX_phe__L_e
+PM3-B9,EX_pro_L(e),L-Proline,EX_pro__L_e
+PM3-C1,EX_tyr_L(e),L-Tyrosine,EX_tyr__L_e
+PM3-C11,EX_hom_L(e),L-Homoserine,EX_hom__L_e
+PM3-C12,EX_orn(e),L-Ornithine,EX_orn_e
+PM3-C2,EX_val_L(e),L-Valine,EX_val__L_e
+PM3-C3,EX_ala_D(e),D-Alanine,EX_ala__D_e
+PM3-C8,EX_ser_D(e),D-Serine,EX_ser__D_e
+PM3-D11,EX_ptrc(e),Putrescine,EX_ptrc_e
+PM3-D12,EX_agm(e),Agmatine,EX_agm_e
+PM3-D9,EX_etha(e),Ethanolamine,EX_etha_e
+PM3-E11,EX_acgam(e),N-Acetyl-D-Glucosamine,EX_acgam_e
+PM3-E12,EX_acgal(e),N-Acetyl-D-Galactosamine,EX_acgal_e
+PM3-E2,EX_peamn(e),β-Phenylethyl-amine,EX_peamn_e
+PM3-E3,EX_tym(e),Tyramine,EX_tym_e
+PM3-E8,EX_gam(e),D-Glucosamine,EX_gam_e
+PM3-F1,EX_acmana(e),N-Acetyl-D-Mannosamine,EX_acmana_e
+PM3-F10,EX_ura(e),Uracil,EX_ura_e
+PM3-F11,EX_uri(e),Uridine,EX_uri_e
+PM3-F12,EX_ins(e),Inosine,EX_ins_e
+PM3-F2,EX_ade(e),Adenine,EX_ade_e
+PM3-F3,EX_adn(e),Adenosine,EX_adn_e
+PM3-F4,EX_cytd(e),Cytidine,EX_cytd_e
+PM3-F5,EX_csn(e),Cytosine,EX_csn_e
+PM3-F6,EX_gua(e),Guanine,EX_gua_e
+PM3-F7,EX_gsn(e),Guanosine,EX_gsn_e
+PM3-F8,EX_thym(e),Thymine,EX_thym_e
+PM3-F9,EX_thymd(e),Thymidine,EX_thymd_e
+PM3-G1,EX_xan(e),Xanthine,EX_xan_e
+PM3-G2,EX_xtsn(e),Xanthosine,EX_xtsn_e
+PM3-G5,EX_alltn(e),Allantoin,EX_alltn_e
+PM4-A11,EX_23camp(e),"Adenosine-2’,3’-cyclicmonophosphate",EX_23camp_e
+PM4-A2,EX_pi(e),Phosphate,EX__pi_e
+PM4-A9,EX_3amp(e),Adenosine-3’-monophosphate,EX_3amp_e
+PM4-B10,EX_gmp(e),Guanosine-5’-monophosphate,EX_gmp_e
+PM4-B11,EX_23cgmp(e),"Guanosine-2’,3’-cyclicmonophosphate",EX_23cgmp_e
+PM4-B9,EX_3gmp(e),Guanosine-3’-monophosphate,EX_3gmp_e
+PM4-C10,EX_cmp(e),Cytidine-5’-monophosphate,EX_cmp_e
+PM4-C11,EX_23ccmp(e),"Cytidine-2’,3’-cyclicmonophosphate",EX_23ccmp_e
+PM4-C3,EX_g1p(e),D-Glucose-1-Phosphate,EX_g1p_e
+PM4-C4,EX_g6p(e),D-Glucose-6-Phosphate,EX_g6p_e
+PM4-C6,EX_gam6p(e),D-Glucosamine-6-Phosphate,EX_gam6p_e
+PM4-C9,EX_3cmp(e),Cytidine-3’-monophosphate,EX_3cmp_e
+PM4-D10,EX_ump(e),Uridine-5’-monophosphate,EX_ump_e
+PM4-D11,EX_23cump(e),"Uridine-2’,3’-cyclicmonophosphate",EX_23cump_e
+PM4-D2,EX_man6p(e),D-Mannose-6-Phosphate,EX_man6p_e
+PM4-D6,EX_pser_L(e),O-Phospho-L-Serine,EX_pser__L_e
+PM4-D7,EX_thrp(e),O-Phospho-L-Threonine,EX_thrp_e
+PM4-D9,EX_3ump(e),Uridine-3’-monophosphate,EX_3ump_e
+PM4-E1,EX_tyrp(e),O-Phospho-D-Tyrosine,EX_tyrp_e
+PM4-E11,EX_minohp(e),InositolHexaphosphate,EX_minohp_e
