@@ -1,7 +1,32 @@
 version: "0.1"
 medium:
   path: "media/"
+  definitions:
+    m9_minimal:
+      filename: "min_media.csv"
+      label: "Minimal media"
+    no_carbon:
+      filename: "min_media_no_carbon.csv"
+      label: "No Carbon"
+    no_nitrogen:
+      filename: "min_media_no_nitrogen.csv"
+      label: "No Nitrogen"
 essentiality:
   path: "essentiality/"
+  experiments:
+    knockouts:
+      medium: m9_minimal
+      filename: "ge_m9_glucose.csv"
+      label: "knock-out library"
 growth:
   path: "growth/"
+  experiments:
+    biolog_pm1:
+      medium:  no_carbon
+      filename: 'pm1_pm2_biolog.csv'
+      label: "Biolog data"
+    biolog_pm3:
+      medium:     no_nitrogen
+      filename: 'pm3b_biolog.csv'
+      label: "Biolog data"
+minimal_growth_rate: 0.05
