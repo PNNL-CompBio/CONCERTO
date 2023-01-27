@@ -39,7 +39,8 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/rhodosporidium_toruloides_ifo_08804/Rhodo_Toru.xml 
+        memote run models/rhodosporidium_toruloides_ifo_08804/Rhodo_Toru.xml \
+        --experimental=models/rhodosporidium_toruloides_ifo_08804/data/experiments.yml
         
 
     - name: Compute Memote history on push

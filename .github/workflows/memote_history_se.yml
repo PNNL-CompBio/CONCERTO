@@ -40,7 +40,8 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/synechococcus_elongatus_pcc_7942/syn_elong.xml 
+        memote run models/synechococcus_elongatus_pcc_7942/syn_elong.xml \
+        --experimental=models/synechococcus_elongatus_pcc_7942/data/experiments.yml
         
 
     - name: Compute Memote history on push
