@@ -1,7 +1,15 @@
 version: "0.1"
 medium:
   path: "media/"
+  definitions:
+    model_min_media:
+      filename: "syn_min_media.csv"
+      label: "Minimal"
 essentiality:
   path: "essentiality/"
-growth:
-  path: "growth/"
+  experiments:
+    knockouts:
+      medium:  model_min_media
+      filename: "syn_elo_knockdown.csv"
+      label: "knock-out library"
+minimal_growth_rate: 0.05

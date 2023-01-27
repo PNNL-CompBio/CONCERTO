@@ -40,14 +40,14 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/synechococcus_elongatus_pcc_7942/iJB785.xml 
+        memote run models/synechococcus_elongatus_pcc_7942/syn_elong.xml 
         
 
     - name: Compute Memote history on push
       run: |
         # Generate the history report on the deployment branch
         memote report history \
-        --model models/synechococcus_elongatus_pcc_7942/iJB785.xml \
+        --model models/synechococcus_elongatus_pcc_7942/syn_elong.xml \
         --filename="${{ env.other-repo }}/${{ env.history }}"
 
     - name: Auto-commit results
