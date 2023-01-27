@@ -40,7 +40,8 @@ jobs:
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
-        memote run models/azotobacter_vinelandii_dj/azo_vine.xml 
+        memote run models/azotobacter_vinelandii_dj/azo_vine.xml \
+          --experimental=models/azotobacter_vinelandii_dj/data/experiments.yml
         
 
     - name: Compute Memote history on push
@@ -48,7 +49,8 @@ jobs:
         # Generate the history report on the deployment branch
         memote report history \
         --model models/azotobacter_vinelandii_dj/azo_vine.xml \
-        --filename="${{ env.other-repo }}/${{ env.history }}"
+        --filename="${{ env.other-repo }}/${{ env.history }}" \
+        
 
     - name: Auto-commit results
       uses: stefanzweifel/git-auto-commit-action@v4.4.0
