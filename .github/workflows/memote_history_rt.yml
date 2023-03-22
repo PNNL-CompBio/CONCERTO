@@ -24,39 +24,34 @@ jobs:
     - name: Setup variables
       id: setup
       run: |
-        echo "history=rt_history_report.html" >> $GITHUB_ENV
-        echo "deployment=gh-pages" >> $GITHUB_ENV
-        echo "other-repo=gh-pages-repo" >> $GITHUB_ENV
         echo "MEMOTE_LOCATION=sqlite:///results.db" >> $GITHUB_ENV
-
-    - name: Checkout repo for gh-pages branch
-      uses: actions/checkout@v2
-      with:
-        repository: ${{ github.repository }}
-        ref: ${{ env.deployment }}
-        path: ${{ env.other-repo }}
 
     - name: Memote short run
       run: |
         git config --global user.name "memote-bot"
+        git checkout gh-pages
+        git checkout update_rt_model
         memote run models/rhodosporidium_toruloides_ifo_08804/Rhodo_Toru.xml \
+        --location  ${{ env.MEMOTE_LOCATION }} \
         --experimental=models/rhodosporidium_toruloides_ifo_08804/data/experiments.yml
-        
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Compute Memote history on push
       run: |
         # Generate the history report on the deployment branch
+        git checkout gh-pages
         memote report history \
         --model models/rhodosporidium_toruloides_ifo_08804/Rhodo_Toru.xml \
-        --filename="${{ env.other-repo }}/${{ env.history }}"
+        --filename="rt_history_report.html"
 
     - name: Auto-commit results
       uses: stefanzweifel/git-auto-commit-action@v4.4.0
       with:
         commit_user_name: memote-bot
         commit_message: "chore: update memote history report"
-        file_pattern: ${{ env.history }}
-        branch: ${{ env.deployment }}
-        repository: ${{ env.other-repo }}
+        file_pattern: rt_history_report.html
+        branch: gh-pages
+        repository: .
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
