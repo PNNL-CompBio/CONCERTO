@@ -11,7 +11,9 @@ import d3flux as d3f
 # Note:
 #   - corresponding reactions named with a "EX_"+metab_id+org_id format
 #   -
-def make_met_exchange_model_only_shared_external_mets(org_list, model_name):
+
+
+def make_combined_model_external_mets(org_list, model_name):
     metabolite_exchange_model = cobra.Model(model_name)
     # go through each organism
     for this_org in org_list:
@@ -32,6 +34,12 @@ def make_met_exchange_model_only_shared_external_mets(org_list, model_name):
 
             # Add new reactions to new model
             metabolite_exchange_model.add_reactions(org_m_reactions)
+
+    return metabolite_exchange_model
+
+
+def make_combined_model_external_mets_shared_only(org_list, model_name):
+    metabolite_exchange_model = make_combined_model_external_mets(org_list, model_name)
 
     lone_metabolites = [m for m in metabolite_exchange_model.metabolites if len(m.reactions) == 1]
     metabolite_exchange_model.remove_metabolites(lone_metabolites, destructive=True)
