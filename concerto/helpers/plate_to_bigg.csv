@@ -30,8 +30,8 @@ PM1-C2,EX_galctn_D(e),D-GalactonicAcid-γ-Lactone,EX_galctn__D_e
 PM1-C4,EX_rib_D(e),D-Ribose,EX_rib__D_e
 PM1-C6,EX_rmn(e),L-Rhamnose,EX_rmn_e
 PM1-C7,EX_fru(e),D-Fructose,EX_fru_e
-PM1-C8,EX_ac(e),Acetic Acid,EX__ac_e
-PM1-C9,EX_glc(e),α-D-Glucose,EX_glc_e
+PM1-C8,EX_ac(e),Acetic Acid,EX_ac_e
+PM1-C9,EX_glc(e),α-D-Glucose,EX_glc__D_e
 PM1-D1,EX_asn_L(e),L-Asparagine,EX_asn__L_e
 PM1-D11,EX_sucr(e),Sucrose,EX_sucr_e
 PM1-D12,EX_uri(e),Uridine,EX_uri_e
@@ -40,7 +40,7 @@ PM1-D6,EX_akg(e),α-Keto-GlutaricAcid,EX_akg_e
 PM1-D9,EX_lcts(e),α-D-Lactose,EX_lcts_e
 PM1-E1,EX_gln_L(e),L-Glutamine,EX_gln__L_e
 PM1-E10,EX_malttr(e),Maltotriose,EX_malttr_e
-PM1-E11,EX_dad_2(e),2-DeoxyAdenosine,EX_dad__2_e
+PM1-E11,EX_dad_2(e),2-DeoxyAdenosine,EX_dad_2_e
 PM1-E12,EX_adn(e),Adenosine,EX_adn_e
 PM1-E3,EX_g1p(e),Glucose-1-Phosphate,EX_g1p_e
 PM1-E4,EX_f6p(e),Fructose-6-Phosphate,EX_f6p_e
@@ -138,7 +138,7 @@ PM3-G1,EX_xan(e),Xanthine,EX_xan_e
 PM3-G2,EX_xtsn(e),Xanthosine,EX_xtsn_e
 PM3-G5,EX_alltn(e),Allantoin,EX_alltn_e
 PM4-A11,EX_23camp(e),"Adenosine-2’,3’-cyclicmonophosphate",EX_23camp_e
-PM4-A2,EX_pi(e),Phosphate,EX__pi_e
+PM4-A2,EX_pi(e),Phosphate,EX_pi_e
 PM4-A9,EX_3amp(e),Adenosine-3’-monophosphate,EX_3amp_e
 PM4-B10,EX_gmp(e),Guanosine-5’-monophosphate,EX_gmp_e
 PM4-B11,EX_23cgmp(e),"Guanosine-2’,3’-cyclicmonophosphate",EX_23cgmp_e
