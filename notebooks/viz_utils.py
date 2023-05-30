@@ -627,7 +627,7 @@ def make_3organism_extmetab_viz(org_list, model_name,
 
     # Create a multi-organism model if one isn't already provided
     if multi_org_model is None:
-        multi_org_model = make_met_exchange_model_only_shared_external_mets(
+        multi_org_model = make_combined_model_external_mets_shared_only(
             org_list, model_name
         )
 
@@ -669,16 +669,22 @@ def make_3organism_extmetab_viz(org_list, model_name,
 
     # There is no difference between function calls or args - JP
     # Create the flux map
-    if reorg_after_filter:
-        fluxmap_dict = create_flux_map(model_name, ext_met_df)
-        flux_dict_info = create_flux_dict_info(model_dict, flux_df,
-                                               exclude_0flux, flux_threshold)
-    else:
-        fluxmap_dict = create_flux_map(model_name, ext_met_df)
-        flux_dict_info = create_flux_dict_info(model_dict, flux_df,
-                                               exclude_0flux, flux_threshold)
 
-    return fluxmap_dict, flux_dict_info
+    fluxmap_dict = create_flux_map(model_name, ext_met_df)
+
+    return fluxmap_dict
+
+
+    # if reorg_after_filter:
+    #     fluxmap_dict = create_flux_map(model_name, ext_met_df)
+    #     flux_dict_info = create_flux_dict_info(model_dict, flux_df,
+    #                                            exclude_0flux, flux_threshold)
+    # else:
+    #     fluxmap_dict = create_flux_map(model_name, ext_met_df)
+    #     flux_dict_info = create_flux_dict_info(model_dict, flux_df,
+    #                                            exclude_0flux, flux_threshold)
+    #
+    # return fluxmap_dict, flux_dict_info
 
 
 # Save d3flux readable model to json file
