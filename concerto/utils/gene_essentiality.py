@@ -31,19 +31,18 @@ def create_ge_confusion_matrix(model, exp_file_path):
     del ge_experimental['essential']
     merged = pd.concat([ge_experimental, ge_simulated], axis=1)
 
-    tp = merged[merged.actual & merged.predicted]
-    fp = merged[~merged.actual & merged.predicted]
-    tn = merged[~merged.actual & ~merged.predicted]
-    fn = merged[merged.actual & ~merged.predicted]
+    tp = merged[~merged.actual & ~merged.predicted]
+    fp = merged[merged.actual & ~merged.predicted]
+    tn = merged[merged.actual & merged.predicted]
+    fn = merged[~merged.actual & merged.predicted]
 
     conf_matrix = np.array(
         [tp.shape[0],  fn.shape[0], fp.shape[0], tn.shape[0]]
     ).reshape((2, 2))
-
     g = sns.heatmap(conf_matrix, annot=True, fmt='0.0f', cmap='Reds', cbar=False)
     g.set_xlabel("Actual Growth");
     g.set_ylabel("Predicted Growth");
-    g.set_xticks([0.5, 1.5], ['True', 'False']);
-    g.set_yticks([0.5, 1.5], ['True', 'False']);
+    g.set_xticks([0.5, 1.5], ['+', '-']);
+    g.set_yticks([0.5, 1.5], ['+', '-']);
 
     return {'TP': tp, 'FP': fp, 'FN': fn, 'TN': tn}

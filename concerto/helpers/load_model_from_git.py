@@ -1,6 +1,7 @@
 from cobra.io import read_sbml_model
 import requests
 
+
 def load_model_from_git(model_name: str):
     """Helper function for loading a SBML compliant model into CobraPy directly from Git
 
