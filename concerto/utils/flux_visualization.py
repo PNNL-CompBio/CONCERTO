@@ -27,7 +27,7 @@ def create_fluxflow_viz(consort_model, flux_df, org2group_dict,
     # Generate diagram object
     viz_obj = get_diagram(node_df, links_df)
 
-    return viz_obj
+    return viz_obj, node_df, links_df
 
 
 def refine_flux_df(flux_df):
@@ -342,13 +342,15 @@ def assign_colors_node_df(node_df, org_names, m_in_use, carrier_m,
 def get_diagram(node_df, links_df):
 
     fig_obj = go.Figure(go.Sankey(
+        arrangement = "freeform",
+        
         valueformat=".3f",
         node=dict(
             pad=15,
             thickness=30,
             label=node_df['Node_Name'].values,
-            x=node_df['Xpos'].values,
-            # y=list(node_df['Ypos'].values),
+            # x=node_df['Xpos'].values,
+            y=list(node_df['Ypos'].values),
             color=node_df['Color'].values
         ),
         link=dict(
